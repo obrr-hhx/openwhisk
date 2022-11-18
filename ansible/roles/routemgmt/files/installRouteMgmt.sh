@@ -39,7 +39,7 @@ NAMESPACE="$3"
 WSK_CLI="$4"
 
 npm config set proxy http://222.20.68.133:7890
-npm config set https-proxy http://222.20.68.133:7890
+npm config set registry "http://registry.npmjs.org/"
 
 WHISKPROPS_FILE="$OPENWHISK_HOME/whisk.properties"
 if [ -z "$GW_USER" ]; then
